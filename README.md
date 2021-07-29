@@ -1,4 +1,5 @@
 # NGX-Leaflet-Fullscreen
+This fork is a workaround that fixes build errors in Angular.
 
 This is a wrapper for the [leaflet-fullscreen control](https://github.com/Leaflet/Leaflet.fullscreen) to make it easy to use in Angular 8+.
 
@@ -15,11 +16,11 @@ For an example of this working in a real site - see [trackbash](https://trackbas
 Install using npm:
 
 ```
-npm install @runette/ngx-leaflet-fullscreen
+npm install @kpaterakis/ngx-leaflet-fullscreen
 ```
 
 >
-> Note : this package currently installs a _fork_ of leaflet-fullscreen : [@runette/leaflet-fullscreen](https://github.com/runette/Leaflet.fullscreen).
+> Note : this package currently installs a _fork_ of leaflet-fullscreen : [@kpaterakis/leaflet-fullscreen](https://github.com/runette/Leaflet.fullscreen).
 >
 >This is because the root repo has not been updated with several important PRs and has not been changed for a year.
 # Usage
@@ -27,7 +28,7 @@ npm install @runette/ngx-leaflet-fullscreen
 This library needs to be imported into the application module:
 
 ```ts
-import {NgxLeafletFullscreenModule} from '@runette/ngx-leaflet-fullscreen'
+import {NgxLeafletFullscreenModule} from '@kpaterakis/ngx-leaflet-fullscreen'
 
 imports: [
     ...
@@ -89,7 +90,7 @@ Unfortunately - I think because the leaflet map is run outside of Angular by ngx
 Add the following to the styles.css
 
 ```CSS
-@import "@runette/leaflet-fullscreen/dist/leaflet.fullscreen.css";
+@import "@kpaterakis/leaflet-fullscreen/dist/leaflet.fullscreen.css";
 ```
 
 # Build Config
